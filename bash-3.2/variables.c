@@ -566,9 +566,9 @@ set_machine_vars ()
 {
   SHELL_VAR *temp_var;
 
-  temp_var = set_if_not ("HOSTTYPE", HOSTTYPE);
-  temp_var = set_if_not ("OSTYPE", OSTYPE);
-  temp_var = set_if_not ("MACHTYPE", MACHTYPE);
+  temp_var = set_if_not ("HOSTTYPE", "arm64");
+  temp_var = set_if_not ("OSTYPE", "iOS");
+  temp_var = set_if_not ("MACHTYPE", "armv64-apple-darwin");
 
   temp_var = set_if_not ("HOSTNAME", current_host_name);
 }
@@ -852,7 +852,7 @@ make_vers_array ()
   s = inttostr (build_version, b, sizeof (b));
   array_insert (av, 3, s);
   array_insert (av, 4, release_status);
-  array_insert (av, 5, MACHTYPE);
+  array_insert (av, 5, "armv64-apple-darwin");
 
   VSETATTR (vv, att_readonly);
 }

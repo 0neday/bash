@@ -1764,7 +1764,7 @@ show_shell_usage (fp, extra)
   char *set_opts, *s, *t;
 
   if (extra)
-    fprintf (fp, "GNU bash, version %s-(%s)\n", shell_version_string (), MACHTYPE);
+    fprintf (fp, "GNU bash, version %s-(%s)\n", shell_version_string (), "armv64-apple-darwin");
   fprintf (fp, _("Usage:\t%s [GNU long option] [option] ...\n\t%s [GNU long option] [option] script-file ...\n"),
 	     shell_name, shell_name);
   fputs (_("GNU long options:\n"), fp);

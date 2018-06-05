@@ -80,7 +80,7 @@ void
 show_shell_version (extended)
      int extended;
 {
-  printf ("GNU bash, version %s (%s)\n", shell_version_string (), MACHTYPE);
+  printf ("GNU bash, version %s (%s)\n", shell_version_string (), "armv64-apple-darwin");
   if (extended)
     printf (_("Copyright (C) 2007 Free Software Foundation, Inc.\n"));
 }

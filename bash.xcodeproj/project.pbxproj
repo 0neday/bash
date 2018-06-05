@@ -1930,7 +1930,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				PREBINDING = NO;
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT) $(SRCROOT)/**";
+				VALID_ARCHS = arm64;
 				ZERO_LINK = NO;
 			};
 			name = Release;
